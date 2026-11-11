@@ -64,7 +64,7 @@
 
   // Classement Diablofus en direct. À activer (true) quand le serveur de Diablofus autorise cette page
   // (en-tête Access-Control-Allow-Origin), sinon le navigateur bloque la demande et affiche une erreur.
-  const CLASSEMENT = false;
+  const CLASSEMENT = true;
   const CL = { iop: "Iop", cra: "Crâ", osamodas: "Osamodas", sacrieur: "Sacrieur" };
   if (CLASSEMENT) fetch("https://api.diablofus.com/classement")
     .then((r) => r.json())
