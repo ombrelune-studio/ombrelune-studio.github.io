@@ -57,7 +57,8 @@ h2{font-size:38px;margin:0 0 18px;line-height:1.1;text-wrap:balance}
 .cls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
 .cls a{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px;padding:8px 14px 18px;border-radius:18px;background:radial-gradient(circle at 50% 38%,color-mix(in srgb,var(--ac) 45%,transparent),transparent 62%),var(--card);border:3px solid transparent;transition:transform .2s,border-color .2s}
 .cls a:hover{transform:translateY(-6px) rotate(-1deg);border-color:var(--ac)}
-.cls img{width:170px;height:auto;filter:drop-shadow(0 8px 10px rgba(0,0,0,.5));transition:transform .2s}
+.cls img{width:auto;height:230px;max-width:100%;object-fit:contain;filter:drop-shadow(0 10px 12px rgba(0,0,0,.55));transition:transform .2s}
+.cls i{font-style:normal;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#ffe9a8}
 .cls a:hover img{transform:scale(1.08)}
 .cls b{font-family:"Lilita One",sans-serif;font-weight:400;font-size:26px;color:var(--ac)}
 .cls span{color:var(--mute);font-size:14.5px}
@@ -125,7 +126,7 @@ footer a{color:var(--ink);font-weight:800}
   main{padding:42px max(16px,env(safe-area-inset-right)) 12px max(16px,env(safe-area-inset-left));gap:44px}
   h2{font-size:30px}
   .feat{grid-template-columns:1fr}
-  .cls{gap:10px}.cls img{width:120px}.cls b{font-size:21px}.cls span{font-size:13px}
+  .cls{gap:10px}.cls img{height:160px}.cls i{font-size:11px}.cls b{font-size:21px}.cls span{font-size:13px}
   .also{padding:20px}.also-tx h2{font-size:36px}.pop{width:110px;right:-6px}
   .nw{grid-template-columns:1fr}
   .disc{flex-direction:column;text-align:center}
