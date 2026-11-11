@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ombrelune Studio · Diablofus et Idlus</title>
+  <meta name="description" content="Ombrelune Studio présente Diablofus, un action-RPG en temps réel dans le Monde des Douze, et Idlus, l'idle aux 8 héros. Jeux de fans gratuits, dans le navigateur.">
+  <meta name="theme-color" content="#2c0b6b">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icone-32.png">
+  <link rel="apple-touch-icon" href="img/icone-180.png">
+  <meta property="og:title" content="Ombrelune Studio présente Diablofus">
+  <meta property="og:description" content="Un action-RPG en temps réel dans le Monde des Douze. Gratuit, dans le navigateur. Et aussi Idlus, l'idle aux 8 héros.">
+  <meta property="og:image" content="https://ombrelune-studio.github.io/img/apercu.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+  <nav class="nav">
+    <a class="br" href="#haut"><img src="img/lune.webp" alt="" width="30" height="30">Ombrelune Studio</a>
+    <a class="lk" href="#diablofus">Diablofus</a>
+    <a class="lk" href="#idlus">Idlus</a>
+    <a class="lk" href="#nouveautes">Nouveautés</a>
+    <a class="cta" href="https://discord.gg/9ApPgWjPUM" target="_blank" rel="noopener">Discord</a>
+  </nav>
+
+  <header class="hero" id="haut">
+    <canvas id="fx" aria-hidden="true"></canvas>
+    <div class="sticker">Version 0.4 : Amakna ouvert !</div>
+    <div class="hrow">
+      <div class="htx">
+        <p class="eyebrow"><img src="img/lune.webp" alt="" width="22" height="22">Ombrelune Studio présente</p>
+        <h1><img class="dlogo" src="img/diablofus-logo.webp" alt="Diablofus : Les Douze Enfers" width="900" height="370"></h1>
+        <p class="tl">Un action-RPG <b>en temps réel</b> dans le Monde des Douze. Nettoie des zones entières, ramasse du butin légendaire, affronte les boss.</p>
+        <div class="tgs"><span class="tg">Gratuit</span><span class="tg">Dans le navigateur</span><span class="tg">Sans téléchargement</span><span class="tg">À plusieurs</span></div>
+        <div class="hb">
+          <a class="play big" href="https://diablofus.com/?depuis=ombrelune">Jouer gratuitement</a>
+          <a class="ghost" href="#classes">Voir les classes</a>
+        </div>
+        <div class="mobnote">
+          <p><b>Diablofus se joue sur PC</b>, au clavier et à la souris. Envoie-toi le lien pour ce soir :</p>
+          <button class="ghost" id="copyLink" type="button">Copier le lien de Diablofus</button>
+          <p class="small">Sur téléphone, essaie <a href="https://idlus.github.io/?depuis=ombrelune">Idlus</a>, notre idle.</p>
+        </div>
+      </div>
+      <div class="show" aria-roledescription="diaporama">
+        <div class="slides" id="slides">
+          <figure class="on"><img src="img/d-5-crypte.webp" alt="" width="760" height="428"><figcaption>Un Iop face aux squelettes, au fond de la crypte d'Incarnam</figcaption></figure>
+          <figure><img src="img/d-1-groupe.webp" alt="" width="760" height="428" loading="lazy"><figcaption>Des vagues de monstres à nettoyer</figcaption></figure>
+          <figure><img src="img/d-2-sort.webp" alt="" width="760" height="428" loading="lazy"><figcaption>Des sorts nerveux, combo en 3 coups</figcaption></figure>
+          <figure><img src="img/d-3-butin.webp" alt="" width="760" height="428" loading="lazy"><figcaption>Du butin qui tombe, jusqu'au légendaire</figcaption></figure>
+          <figure><img src="img/d-4-boss.webp" alt="" width="760" height="428" loading="lazy"><figcaption>Des boss officiels du Monde des Douze</figcaption></figure>
+          <figure><img src="img/d-6-havresac.webp" alt="" width="760" height="428" loading="lazy"><figcaption>Ton Havre-Sac, entre deux expéditions</figcaption></figure>
+        </div>
+        <div class="dots" id="dots"></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="band" aria-hidden="true"><span>DIABLOFUS 0.4 ✦ AMAKNA POUR TOUS ✦ 4 CLASSES ✦ BUTIN LÉGENDAIRE ✦ BOSS OFFICIELS ✦ GRATUIT ✦ DIABLOFUS 0.4 ✦ AMAKNA POUR TOUS ✦ 4 CLASSES ✦ BUTIN LÉGENDAIRE ✦ BOSS OFFICIELS ✦ GRATUIT ✦</span></div>
+
+  <main>
+    <section id="diablofus">
+      <h2>Pourquoi tu vas aimer Diablofus</h2>
+      <div class="feat">
+        <div><b>Temps réel</b><span>Tu te déplaces, tu esquives d'un bond, tu enchaînes les coups. Pas de tour par tour.</span></div>
+        <div><b>Butin</b><span>6 raretés et des pouvoirs légendaires qui changent tes sorts.</span></div>
+        <div><b>Donjons</b><span>Des vagues de monstres et des boss officiels du Monde des Douze.</span></div>
+        <div><b>Monde ouvert</b><span>Incarnam, Astrub et Amakna : plus de 1 500 cartes à parcourir.</span></div>
+      </div>
+    </section>
+
+    <section id="classes">
+      <h2>Choisis ta classe</h2>
+      <div class="cls">
+        <a href="https://diablofus.com/?depuis=ombrelune" style="--ac:#ff6a3d"><img src="img/h-iop_m_0.webp" alt="" width="200" height="200"><b>Iop</b><span>Le guerrier au corps à corps. Épée Céleste, Colère de Iop.</span></a>
+        <a href="https://diablofus.com/?depuis=ombrelune" style="--ac:#f0c040"><img src="img/h-cra_f_0.webp" alt="" width="200" height="200"><b>Crâ</b><span>L'archère qui frappe de loin.</span></a>
+        <a href="https://diablofus.com/?depuis=ombrelune" style="--ac:#5fd18a"><img src="img/h-osa_f_0.webp" alt="" width="200" height="200"><b>Osamodas</b><span>Le dresseur qui se bat avec ses invocations.</span></a>
+        <a href="https://diablofus.com/?depuis=ombrelune" style="--ac:#e0405a"><img src="img/h-sacri_m_0.webp" alt="" width="200" height="200"><b>Sacrieur</b><span>Le berserker qui tape plus fort quand il saigne.</span></a>
+      </div>
+    </section>
+
+    <section id="ladder" hidden>
+      <h2>Les meilleurs aventuriers</h2>
+      <ol class="lad" id="ladList"></ol>
+      <p class="small" id="ladInfo"></p>
+    </section>
+
+    <section id="idlus" class="also">
+      <div class="also-tx">
+        <span class="badge">Aussi chez Ombrelune</span>
+        <h2>Idlus</h2>
+        <p>L'idle aux 8 héros : ils combattent seuls pendant que tu fais autre chose. Donjons, Dofus, métiers, Kolizéum, 3 serveurs.</p>
+        <div class="tgs"><span class="tg">Gratuit</span><span class="tg">PC et téléphone</span><span class="tg">Joue même absent</span></div>
+        <a class="play" href="https://idlus.github.io/?depuis=ombrelune">Jouer à Idlus</a>
+      </div>
+      <a class="also-img" href="https://idlus.github.io/?depuis=ombrelune" aria-label="Jouer à Idlus"><img src="img/idlus.webp" alt="Combat d'Idlus" width="960" height="540" loading="lazy"><img class="pop" src="img/h-eni_f_0.webp" alt="" width="200" height="200"></a>
+    </section>
+
+    <section id="nouveautes">
+      <h2>Les nouveautés</h2>
+      <div class="nw">
+        <div class="nc" style="--ac:#ff8a1f">
+          <h3>Diablofus</h3>
+          <ul id="newsDiablo">
+            <li><span>11/11</span><b>La 0.4 est ouverte : Amakna pour tous</b></li>
+            <li><span>10/11</span><b>Un jeu plus fluide</b></li>
+            <li><span>09/11</span><b>Incarnam à plusieurs</b></li>
+          </ul>
+        </div>
+        <div class="nc" style="--ac:#8fd14f">
+          <h3>Idlus <span class="ver" id="verIdlus"></span></h3>
+          <ul id="newsIdlus">
+            <li><span>2.2.14.17</span><b>Changement de classe offert</b></li>
+            <li><span>2.2.14.16</span><b>Top 2 des votes : Maîtrise ×2 aussi</b></li>
+            <li><span>2.2.14.15</span><b>Maîtrise sans limite</b></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="disc">
+      <img src="img/lune.webp" alt="" width="64" height="64">
+      <div>
+        <h2>Une seule communauté</h2>
+        <p>Idées, entraide, annonces des deux jeux : tout se passe sur le Discord Ombrelune Studio.</p>
+      </div>
+      <a class="dbtn" href="https://discord.gg/9ApPgWjPUM" target="_blank" rel="noopener">Rejoindre le Discord</a>
+    </section>
+  </main>
+
+  <footer>
+    <img src="img/lune.webp" alt="" width="28" height="28">
+    <div>© 2026 Ombrelune Studio · <a href="https://discord.gg/9ApPgWjPUM" target="_blank" rel="noopener">Discord</a> · <a href="https://x.com/XenerCC" target="_blank" rel="noopener">X @XenerCC</a><br>
+    Diablofus et Idlus sont des jeux de fans gratuits, non officiels et non affiliés à Ankama. DOFUS est une marque d'Ankama, les visuels du Monde des Douze lui appartiennent.</div>
+  </footer>
+  <script src="app.js?v=2" defer></script>
+</body>
+</html>
